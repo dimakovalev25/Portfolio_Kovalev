@@ -1,0 +1,10 @@
+.sidepanel {
+    position: fixed;   
+    height: 150px;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    left: 50px;
+    top: 30%;
+    z-index: 3;   /* по панели, флексами делаем колонку и переворачиваем, фикс-будет двигаться с скроллом, индексом ее ставим выше! */
+}
