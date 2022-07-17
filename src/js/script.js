@@ -1,9 +1,9 @@
-const hamburger = document.querySelector('.hamburger'),
+const hamburger = document.querySelector('.hamburger'),     /* объявляем переменную и  обращаемся к нашему документу и получаем элемент по селектору(класс, тег, атрибут!) */
       menu = document.querySelector('.menu'),
       closeElem = document.querySelector('.menu__close');
 
-hamburger.addEventListener('click', () => {
-    menu.classList.add('active');
+hamburger.addEventListener('click', () => {     /* отслеживаем клики и задаем функцию!и когда пользователь кликает по меню и крестике меняеться класс активности! */
+    menu.classList.add('active');    /* добавляеться класс! */
 });
 
 closeElem.addEventListener('click', () => {

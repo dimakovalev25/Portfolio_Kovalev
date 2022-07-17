@@ -1,0 +1,53 @@
+.skills {
+    padding-top: 120px;
+    &__title {
+        position: relative;
+        text-align: center;
+        @include before_circle;
+        &:before {    /*  кружок миксин ставим в центр */
+            top: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    .divider__skills {
+        margin-bottom: 60px;
+    }
+
+    &__subtitle {
+        text-align: center;
+    }
+    .tools {
+        display: grid;
+        grid-template-columns: repeat(4, 270px);
+        grid-template-rows: repeat(2, 270px);
+        column-gap: 13px;
+        row-gap: 13px;
+        .tool {
+            display: block;
+            border: 1px solid black;
+            
+            &__img {
+                margin-top: 30px;
+                margin-left: 30px;
+            }
+            &__title {
+                margin-top: 20px;
+                margin-left: 30px;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 21px;
+                color: #000000;
+            }
+            &__descr {
+                margin: 15px 30px 25px 30px;
+                margin-left: 30px;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 18px;
+                color: #000000;
+                text-align: justify;
+            }
+        }
+    }
+}

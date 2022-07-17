@@ -2,8 +2,8 @@
     position: absolute;
     top: 20px;
     left: 48px;
-    height: 21px;
-    display: flex;
+    height: 21px; 
+    display: flex;    /* флексами переворачиваем наши span в колонку */
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
@@ -18,16 +18,16 @@
 .menu {    /* желтый блок меню */
     position: fixed;
     top: 0;
-    left: -100%;  /* менюшка спрятана влево полностью! */
+    left: -100%;  /* пока полностью ! менюшка спрятана влево полностью! */
     width: 100%;
-    height: 100vh;
+    height: 100vh;  /*  во весь пользовательский экран */
     z-index: 10;
     visibility: hidden;   /* скрыт полностью */
-    opacity: 0;
+    opacity: 0;  /* прозрачность */
     transition: all 0.7s;
     &.active {
         left: 0;
-        visibility: visible;
+        visibility: visible;  /* виден блок */
         opacity: 1;    
     }
     &__block {
